@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="entete">
+    <div class="nom">Jeanet Néhémie FILS</div>
+    <nav class="menu">
+      <a href="contact.html">Contact</a>
+      <a href="competences.html">Compétences</a>
+      <a href="propos.html">À propos</a>
+      <a href="index.html">Accueil</a>
+    </nav>
+  </header>
+  <div class="container">
+    <h1>Ecrivez-moi directement un message</h1>
+    
+    <div class="contact-section">
+      <form id="contactForm">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required />
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <div class="social-links">
+        <h2>Contact</h2>
+        <a href="https://www.linkedin.com/public-profile/settings?lipi=urn%253Ali%253Apage%253Ad_flagship3_profile_self_edit_contact-info%253B0YBm6WBtQpayx477%252FfY6Hw%253D%253D" target="_blank" class="btn linkedin">LinkedIn</a>
+        <a href="mailto:jeanetnehemiefils@gmail.com" class="btn mail">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const prenom = document.getElementById('prenom').value.trim();
+      const nom = document.getElementById('nom').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (prenom && nom && message) {
+        alert('Votre message a bien été envoyé !');
+      } else {
+        alert("Veuillez remplir tous les champs.");
+      }
+    });
+  </script>
+  
+ <div class="footer">
+    <div class="design"> 
+      <p>Designed by <strong><em>Jeanet Néhémie</em></strong> with HTML CSS JS</p>
+    </div>
+    <div class="droits"> 
+      <p>Tous droits réservés - 2025</p>
+    </div>
+  </div>
+</body>
+</html>

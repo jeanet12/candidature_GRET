@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio – Jeanet Néhémie FILS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="entete">
+    <div class="nom">Jeanet Néhémie FILS</div>
+    <nav class="menu">
+      <a href=".terrain">Terrain</a>
+      <a href="donnees.html">Données </a>
+      <a href="geomatique.html">Géomatique </a>
+      <a href="index.html" class="active">Accueil</a>
+    </nav>
+  </header>
+
+  <main class="contenu">
+    <section class="introduction">
+      <h1>Modélisation de la biomasse et du stock de carbone – PNR du Massif des Bauges</h1>
+      <p>
+        Ce projet a été réalisé dans le cadre d’un travail universitaire dans le cadre d'un cours de <em>modélisation avec R</em> en collaboration avec Aku Awuno, une autre étudiante. 
+        L’objectif principal était de <strong>quantifier</strong> et <strong>représenter spatialement</strong> 
+        la biomasse totale et le stock de carbone du Parc Naturel Régional du Massif des Bauges situé en France.
+      </p>
+      <p>
+        Le travail repose sur des données environnementales et forestières, traitées sous R et QGIS, afin de comprendre 
+        l’influence des facteurs topographiques et écologiques sur la distribution spatiale de la biomasse.
+      </p>
+    </section>
+
+    <section class="presentation">
+      <h2>Présentation du territoire d’étude</h2>
+      <figure class="image-carte">
+        <img src="carte1.jpg" alt="Localisation du Parc Naturel Régional du Massif des Bauges" />
+        <figcaptiona>
+          Localisation du Parc Naturel Régional du Massif des Bauges. 
+          Carte réalisée en collaboration avec Awuno.
+        </figcaptiona>
+      </figure>
+    </section>
+
+    <section class="resultats">
+      <h2>Carte interactive</h2>
+      <p>
+        Les résultats ont permis de visualiser la répartition de la biomasse et du carbone sur l’ensemble du territoire du PNR.
+        La carte interactive ci-dessous, réalisée entièrementpar moi-même, permet d’explorer plus finement ces variations spatiales.
+      </p>
+
+      <!-- Carte interactive intégrée -->
+      <div class="carte-interactive">
+        <iframe src="interact.html" width="80%" height="650" style="border:1px solid #ccc; border-radius:10px;">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="conclusion">
+      <h2>Conclusion</h2>
+      <p>
+        Ce travail accessible via <a href = "biomasse.pdf" > ce lien </a> a consolidé mes compétences en <strong>analyse spatiale</strong>, 
+        <strong>traitement de données environnementales</strong> et <strong>cartographie interactive</strong>.
+        Il illustre ma capacité à articuler rigueur scientifique et mise en forme visuelle des données, 
+        dans une perspective de gestion durable des territoires.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="design"> 
+      <p>Conception : <strong><em>Jeanet Néhémie FILS</em></strong> </p>
+    </div>
+    <div class="droits"> 
+      <p>© 2025 – Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
